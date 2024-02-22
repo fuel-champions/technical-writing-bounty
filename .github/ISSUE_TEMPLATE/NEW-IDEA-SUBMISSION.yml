@@ -2,7 +2,6 @@ name: Technical Article Idea Submission
 description: Submit your idea for a technical article for the writing spotlight bounty program.
 title: "Article Idea: "
 labels: ["article-submission", "review-pending"]
-assignees: ''
 body:
   - type: markdown
     attributes:
