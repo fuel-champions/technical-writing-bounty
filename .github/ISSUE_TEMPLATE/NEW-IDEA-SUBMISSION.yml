@@ -1,0 +1,80 @@
+name: Technical Article Idea Submission
+description: Submit your idea for a technical article for the writing spotlight bounty program.
+title: "Article Idea: "
+labels: ["article-submission", "review-pending"]
+assignees: ''
+body:
+  - type: markdown
+    attributes:
+      value: "Thank you for your interest in contributing to the Technical Writing Spotlight Bounty Program! Please fill out the following details for your article idea submission."
+
+  - type: input
+    id: title
+    attributes:
+      label: Article Title
+      description: "What is the proposed title of your article?"
+      placeholder: "Enter the proposed title here"
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Article Summary
+      description: "Provide a brief summary of the planned article."
+      placeholder: "Enter your summary here"
+    validations:
+      required: true
+
+  - type: textarea
+    id: relevance-to-fuel
+    attributes:
+      label: Relevance to Fuel
+      description: "Explain how your article idea relates to Fuel."
+      placeholder: "Describe the relevance here"
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-project
+    attributes:
+      label: Current Project
+      description: "Is this article based on a current project you are working on? If yes, please provide details."
+      placeholder: "Enter project details here"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: fuel-developer-champion
+    attributes:
+      label: Fuel Developer Champion Status
+      description: "Are you a current Fuel Developer Champion?"
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "Please review the requirements for the bounty here: [Technical Writing Bounty Requirements](https://github.com/fuel-champions/technical-writing-bounty)"
+
+  - type: checkboxes
+    id: understanding-requirements
+    attributes:
+      label: Understanding of Requirements
+      description: "Confirm that you understand the requirements for the bounty."
+      options:
+        - label: "I have read and understood the requirements for the Technical Writing Bounty."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: payment-agreement
+    attributes:
+      label: Payment Agreement
+      description: "Confirm that you understand if your article is accepted and published, you will be paid via the [Request](https://www.request.finance) platform and must comply with their requirements to receive payment to the wallet address you provide."
+      options:
+        - label: "I understand that if my article is accepted and published, I will be paid via the Request platform."
+    validations:
+      required: true
